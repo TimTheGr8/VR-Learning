@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7660756204165006570}
   - component: {fileID: 5154025776055802288}
   - component: {fileID: 6164061122286969707}
+  - component: {fileID: 5004829760289830212}
   m_Layer: 7
   m_Name: Beach Ball
   m_TagString: Untagged
@@ -291,3 +292,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &5004829760289830212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643610970353200211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd362a447e11047806da1590a336e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _returnTime: 2
