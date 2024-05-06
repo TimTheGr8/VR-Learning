@@ -12,8 +12,8 @@ public class PistolController : MonoBehaviour
     [SerializeField]
     Vector3 _muzzleFlashOffset;
     AudioSource _audio;
-    //[SerializeField]
-    //AudioClip _gunShotClip;
+    [SerializeField]
+    AudioClip _gunShotClip;
 
     private void Start()
     {
@@ -24,8 +24,8 @@ public class PistolController : MonoBehaviour
     public void TriggerPull()
     {
         Instantiate(_muzzleFlashPrefab, _rayOrigin.position + _muzzleFlashOffset, Quaternion.identity);
-        //if (_gunShotClip != null && _audio != null)
-            //_audio.PlayOneShot(_gunShotClip);
+        if (_gunShotClip != null && _audio != null)
+            _audio.PlayOneShot(_gunShotClip);
 
         if (Physics.Raycast(_rayOrigin.position, _rayOrigin.forward, out RaycastHit hit, Mathf.Infinity) && hit.transform.CompareTag("Target"))
         {
